@@ -29,21 +29,22 @@
 </head>
 <body>
 <h1>hello there 2</h1>
-<!-- Use it like any other HTML element -->
-<model-viewer 
-	ar 
-	alt="Panera Mediterranean Egg Sandwich"
-	src="panera_wrap_scale_02.glb"
-	background-color="#F4F4F4" 
-	environment-image="env/BLUR.hdr"
+	<div id="card">
+	<!-- Use it like any other HTML element -->
+	<model-viewer 
+		ar 
+		alt="Panera Mediterranean Egg Sandwich"	
+		src="panera_wrap_scale_02.glb"
+		background-color="#F4F4F4" 
+		environment-image="env/BLUR.hdr"
+		stage-light-intensity="1"
+		exposure="1"
+		camera-controls
+		interaction-prompt="auto"
 
-	stage-light-intensity="1"
-	exposure="1"
-	camera-controls
-	interaction-prompt="auto"
-	
-	      >
-</model-viewer>
+		      >
+	</model-viewer>
+	</div>
 </body>
 </html>
 
