@@ -1,16 +1,33 @@
 <html>
 
 <head>
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
-	<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 	<title> SceneViewer Test </title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+  <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+  <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+  <script src="node_modules/intersection-observer/intersection-observer.js"></script>
+
+  <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+  <script src="node_modules/resize-observer-polyfill/dist/ResizeObserver.js"></script>
+
+  <!-- 💁 OPTIONAL: Fullscreen polyfill is needed to fully support AR features -->
+  <script src="node_modules/fullscreen-polyfill/dist/fullscreen.polyfill.js"></script>
+
+  <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+  <script src="node_modules/focus-visible/dist/focus-visible.js" defer></script>
 </head>
 <body>
 <h1>hello there</h1>
+ <template>
+<!-- Import the component -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+<!-- Use it like any other HTML element -->
 <model-viewer 
 	ar 
-	alt="Mediterranean Egg Sandwich on a rectangular plate with its respective ingredients around it. Tomato, feta cheese, parmesan cheese, spinach, basil white bean puree" 
+	alt="Panera Mediterranean Egg Sandwich"
 	src="static_02.glb"
 	background-color="#F4F4F4"
 	environment-image="env/BLUR.hdr"
@@ -21,6 +38,6 @@
 	interaction-prompt="auto"
 	      >
 </model-viewer>
-
+</template>
 </body>
 </html>
