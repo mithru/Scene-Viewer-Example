@@ -15,13 +15,13 @@ body {
 
 model-viewer {
   width: 100%;
-  height: 400px;
+  height: 380px;
 }
 
 .attribution {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;\
+  justify-content: space-between;
 }
 
 .attribution img {
