@@ -1,5 +1,4 @@
 body {
-  margin: 1em;
   padding: 0;
   font-family: Google Sans, Noto, Roboto, Helvetica Neue, sans-serif;
   color: #244376;
@@ -7,7 +6,6 @@ body {
 
 
 #card {
-  margin: 3em auto;
   display: flex;
   flex-direction: column;
   max-width: 600px;
