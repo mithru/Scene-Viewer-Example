@@ -21,13 +21,9 @@ model-viewer {
 .attribution {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 1em;
+  justify-content: space-between;\
 }
 
-.attribution h1 {
-  margin: 0 0 0.25em;
-}
 
 .attribution img {
   opacity: 0.5;
