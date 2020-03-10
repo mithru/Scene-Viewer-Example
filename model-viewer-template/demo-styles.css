@@ -32,7 +32,7 @@ model-viewer {
   flex-shrink: 0;
   text-decoration: none;
 }
-
+ 
 footer {
   display: flex;
   flex-direction: column;
