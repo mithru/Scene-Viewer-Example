@@ -13,9 +13,9 @@ body {
 model-viewer {
   width: 99%;
   height: 397px;
-  border: #eee;
+/*   border: #eee;
   border-width: 1px;
-  border-style: solid;
+  border-style: solid; */
 }
 
 .attribution {
