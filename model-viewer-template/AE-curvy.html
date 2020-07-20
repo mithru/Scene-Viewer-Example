@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script> 
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
+    <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
+    <script src="https://unpkg.com/focus-visible@5.1.0/dist/focus-visible.js"></script>
+    <script type="module" src="https://lifelike3d.s3.amazonaws.com/public/model-viewer.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <script src="https://lifelike3d.s3.amazonaws.com/public/stats_track.js"></script>
+    <script src="https://lifelike3d.s3.amazonaws.com/public/timeme.js"></script>
+    <link rel="stylesheet" href="https://americaneagle3dview.s3.amazonaws.com/public/css/button-styles.css">
+  </head>
+  <body>   
+    <model-viewer
+    name = "model-viewer" 
+    client = "AmericanEagle" 
+    collection = "Jeans" 
+    id = "Skinny Jeans"
+    ar                 
+    src="https://americaneagle3dview.s3.amazonaws.com/public/models/curvyJeans.glb"      
+    ios-src="https://americaneagle3dview.s3.amazonaws.com/public/models/curvyJeans.usdz"
+    alt="Curvy Super High-Waisted Flare Jean"
+    auto-rotate
+    quick-look-browsers="safari chrome"
+    camera-controls
+    >
+    <button slot="hotspot-hand" class="hotspot selected" data-position="-0.11096722467215603m 0.8438949936565276m 0.002989028350900258m" data-normal="-0.9486031230005185m 0.30950449066177194m 0.06602336930102971m">
+    <div id="annotation"> Super Stretch </div>
+    </button>
+    <button slot="hotspot-foot" class="hotspot selected" data-position="-0.08367045218638229m 0.08988855561222353m 0.0536237691968906m" data-normal="0.01814334380876426m -0.06969470242083173m 0.9974033625018058m">
+                  <div id="annotation"> Easy knee & leg opening </div>
+    </button>
+    </model-viewer>
+  </body>
+</html>
